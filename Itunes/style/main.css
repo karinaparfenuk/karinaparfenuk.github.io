@@ -1,0 +1,831 @@
+            @font-face {
+                font-family: "Proxima Nova";
+                /* Имя шрифта */
+                src: url("../fonts/Proxima Nova Extrabold.otf");
+                /* Путь к файлу со шрифтом */
+                font-weight: 900;
+            }
+            
+            @font-face {
+                font-family: "Proxima Nova";
+                src: url("../fonts/Proxima Nova Light.otf");
+                font-weight: 300;
+            }
+            
+            @font-face {
+                font-family: "Proxima Nova";
+                src: url("../fonts/Proxima Nova Regular.otf");
+                font-weight: 400;
+            }
+            
+            @font-face {
+                font-family: "Proxima Nova";
+                src: url("../fonts/Proxima Nova Semibold.otf");
+                font-weight: 600;
+            }
+            
+            @font-face {
+                font-family: "Proxima Nova";
+                src: url("../fonts/Proxima Nova Thin.otf");
+                font-weight: 100;
+            }
+            
+            * {
+                font-family: "Proxima Nova";
+            }
+            
+            a {
+                text-decoration: none !important;
+            }
+            
+            a:hover {
+                color: inherit;
+            }
+            
+            .logo_links {
+                display: flex;
+                align-items: center;
+                height: 26px;
+                margin-top: 15px;
+            }
+            
+            .logo_links a {
+                margin-right: 10px;
+                display: flex;
+            }
+            
+            .logo_links a img {
+                vertical-align: sub;
+            }
+            
+            .main_header {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            
+            .social_links a,
+            .round_icon {
+                width: 33px;
+                height: 33px;
+                margin-right: 7px;
+                border: 2px solid #c5c9d0;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #c5c9d0;
+                text-decoration: none;
+            }
+            
+            .social_links a:last-of-type {
+                margin-right: 0;
+            }
+            
+            .social_links {
+                display: flex;
+                justify-content: flex-end;
+            }
+            
+            .header_phone {
+                font-family: "Proxima Nova";
+                font-size: 28px;
+                font-weight: 400;
+                color: #132237;
+                line-height: 28px;
+            }
+            
+            .header_phone span {
+                color: #ce45ef;
+            }
+            
+            .subheader {
+                background-color: #5f5d71;
+                padding-top: 17px;
+                padding-bottom: 13px;
+            }
+            
+            .page_links {
+                padding-left: 0px;
+                margin-bottom: 0px;
+                display: flex;
+            }
+            
+            .page_links li {
+                list-style: none;
+                margin-right: 40px;
+            }
+            
+            .page_links li a {
+                opacity: 0.7;
+                color: #ffffff;
+                font-size: 15px;
+                font-weight: 300;
+                letter-spacing: 0.38px;
+            }
+            
+            .main_info h1 {
+                color: #132237;
+                font-size: 48px;
+                font-weight: 400;
+                margin-bottom: 92px;
+            }
+            
+            .main_info h1 span {
+                background-image: linear-gradient(59deg, #8b7aef 0%, #ea5b83 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 72px;
+                font-weight: 600;
+                line-height: 56px;
+                display: inline-block;
+                margin-top: 24px;
+            }
+            
+            .main_info p {
+                opacity: 0.7;
+                color: #132237;
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 91px;
+            }
+            
+            .button_overlay {
+                background-image: linear-gradient(59deg, #8b7aef 0%, #ea5b83 100%);
+                display: inline-block;
+                padding: 2px;
+                border-radius: 28px;
+            }
+            
+            .button_overlay button {
+                background-color: #e9eef2;
+                border: none;
+                padding-top: 20px;
+                padding-left: 60px;
+                padding-bottom: 20px;
+                padding-right: 63px;
+                border-radius: 28px;
+                color: #132237;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                line-height: 1;
+                outline: none;
+            }
+            
+            .first_section {
+                padding-top: 125px;
+                padding-bottom: 230px;
+                background-color: #eaeef3;
+            }
+            
+            .first_section_img {
+                position: absolute;
+                top: -125px;
+                right: 100%;
+            }
+            
+            .main_info {
+                position: relative;
+            }
+            
+            .advantages {
+                padding-top: 85px;
+                padding-bottom: 92px;
+            }
+            
+            .advantages h2 {
+                color: #413e55;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 70px;
+            }
+            
+            .text_gradient {
+                background-image: linear-gradient(59deg, #8b7aef 0%, #ea5b83 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 72px;
+                font-weight: 600;
+                line-height: 56px;
+                margin: 0 auto;
+                width: fit-content;
+            }
+            
+            .advantages .description {
+                text-align: center;
+                color: #4a475a;
+                font-size: 18px;
+                font-weight: 400;
+                max-width: 205px;
+                margin: 35px auto 0;
+            }
+            
+            #myTab .nav-item {
+                background-image: linear-gradient(59deg, #8b7aef 0%, #ea5b83 100%);
+                display: inline-block;
+                padding: 2px;
+                border-radius: 15px;
+                margin-right: 16px;
+                position: relative;
+                min-width: 100px;
+            }
+            
+            #myTab .nav-item a {
+                background-color: #ffffff;
+                border-radius: 15px;
+                color: #413e55;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 12px;
+                text-transform: uppercase;
+                letter-spacing: 0.97px;
+                text-align: center;
+            }
+            
+            #myTab .nav-item a.active {
+                background-color: #8b7aef;
+                color: #ffffff;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                border: none;
+            }
+            
+            #myTab {
+                justify-content: center;
+                border-bottom: none;
+                margin-bottom: 45px;
+            }
+            
+            .tracks_table {
+                box-shadow: 0 16px 28px rgba(171, 181, 194, 0.25);
+                background-color: #ffffff;
+                margin-bottom: 33px;
+            }
+            
+            .tracks_table_row {
+                display: flex;
+                justify-content: space-between;
+                padding: 16px 32px;
+                border-bottom: 2px solid rgba(171, 181, 194, 0.25);
+                align-items: center;
+            }
+            
+            .tracks_table_row p {
+                color: #413e55;
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 0;
+            }
+            
+            .tracks_table_row button {
+                padding: 10px 24px 9px 23px;
+                border: none;
+                background-color: #8b7aef;
+                border-radius: 3px;
+                color: #ffffff;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 11px;
+                text-align: left;
+                text-transform: uppercase;
+                letter-spacing: 0.97px;
+                outline: none;
+            }
+            
+            .tracks_table_descr {
+                padding-left: 31px;
+                color: #413e55;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+                font-weight: 600;
+                max-width: 655px;
+            }
+            
+            .mops {
+                padding-bottom: 104px;
+                padding-top: 90px;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .mops_img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            
+            .top_itunes {
+                padding-top: 96px;
+                overflow: hidden;
+            }
+            
+            .top_itunes h2 {
+                color: #413e55;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 30px;
+                margin-bottom: 38px;
+            }
+            
+            .top_itunes p {
+                opacity: 0.9;
+                color: #413e55;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 30px;
+                margin-bottom: 67px;
+            }
+            
+            .top_itunes h3 {
+                color: #413e55;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 1;
+                text-align: left;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            
+            .top_itunes .left_part {
+                padding-right: 138px;
+            }
+            
+            .top_itunes .right_part {
+                padding-right: 120px;
+            }
+            
+            .right_part img {
+                position: absolute;
+                top: -83px;
+                left: -53px;
+                z-index: -1;
+            }
+            
+            .feadback h4 {
+                color: #ffffff;
+                font-size: 30px;
+                font-weight: 400;
+                text-align: center;
+                width: 490px;
+                display: block;
+                margin: 0 auto;
+            }
+            
+            .feadback {
+                background-color: #aeb5bd;
+                padding-top: 91px;
+                padding-bottom: 91px;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .feadback button {
+                border-radius: 28px;
+                background-color: #8b7aef;
+                border: none;
+                color: #e9eef2;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                padding-top: 20px;
+                padding-right: 37px;
+                padding-bottom: 20px;
+                padding-left: 39px;
+                outline: none;
+                line-height: 16px;
+                margin: 50px auto 0;
+                display: block;
+            }
+            
+            .feadback img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            
+            footer {
+                background-color: #4a475b;
+                padding-top: 55px;
+            }
+            
+            footer .page_links a {
+                font-weight: 600;
+            }
+            
+            footer .page_links {
+                margin-bottom: 66px;
+            }
+            
+            footer .footer_top {
+                padding-bottom: 35px;
+            }
+            
+            footer .footer_links {
+                padding-left: 0;
+                margin-bottom: 0;
+            }
+            
+            footer .footer_links li {
+                list-style: none;
+            }
+            
+            footer .footer_links li a {
+                color: #a6a6b5;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: left;
+            }
+            
+            footer .phone {
+                color: #ffffff;
+                font-size: 28px;
+                font-weight: 400;
+                text-align: right;
+                display: block;
+                line-height: 1;
+                margin-bottom: 5px;
+            }
+            
+            footer .mail {
+                color: #a6a6b5;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 30px;
+                text-decoration: underline !important;
+                text-align: right;
+                display: block;
+                line-height: 1;
+                margin-bottom: 27px;
+            }
+            
+            .footer_bottom .line {
+                width: 100%;
+                height: 1px;
+                background-color: #ffffff;
+                opacity: 0.21;
+                display: block;
+            }
+            
+            .footer_bottom p {
+                color: #acaaba;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: left;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-bottom: 0;
+            }
+            
+            #exampleModal .modal-dialog {
+                max-width: 580px;
+            }
+            
+            #exampleModal .modal-body {
+                padding-top: 63px;
+                padding-bottom: 75px;
+                padding-left: 95px;
+                padding-right: 95px;
+                border: 6px solid #edf1f6;
+            }
+            
+            #exampleModal .modal-body h3 {
+                color: #413e55;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 37px;
+            }
+            
+            #exampleModal .modal-body input {
+                display: block;
+                background-color: #eaeef3;
+                border: none;
+                margin-bottom: 23px;
+                width: 100%;
+                padding-top: 19px;
+                padding-bottom: 19px;
+                padding-left: 20px;
+                line-height: 1;
+            }
+            
+            #exampleModal .modal-body button {
+                border-radius: 28px;
+                background-color: #8b7aef;
+                color: #e9eef2;
+                font-size: 16px;
+                font-weight: 600;
+                text-align: justifyLeft;
+                color: #ffffff;
+                letter-spacing: 1.2px;
+                border: none;
+                padding-top: 24px;
+                padding-right: 68px;
+                padding-bottom: 19px;
+                padding-left: 68px;
+                display: block;
+                margin: auto;
+                margin-top: 33px;
+                outline: none;
+            }
+            
+            #exampleModal .modal-body input[type="radio"] {
+                display: none;
+            }
+            
+            #exampleModal .modal-body input[type="radio"]:checked+.round_icon {
+                border: 2px solid #8b7aef;
+                color: #8b7aef;
+            }
+            
+            #exampleModal .modal-body label {
+                margin-bottom: 16px;
+            }
+            
+            #exampleModal .modal-body h4 {
+                line-height: 1;
+                margin-bottom: 24px;
+            }
+            
+            .navbar-collapse .header_phone {
+                text-align: left;
+            }
+            
+            .navbar-collapse .social_links {
+                justify-content: flex-start;
+            }
+            
+            .navbar {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            
+            .navbar-toggler .gamburger_line {
+                width: 25px;
+                height: 2px;
+                margin-bottom: 5px;
+                background-color: black;
+                display: block;
+                transition: all .3s;
+                transform-origin: center;
+            }
+            
+            .navbar-toggler .gamburger_line:last-of-type {
+                margin-bottom: 0px;
+            }
+            
+            .navbar .navbar-toggler {
+                outline: none;
+                position: relative;
+                width: 50px;
+                height: 35px;
+            }
+            
+            .navbar .navbar-toggler:not(.collapsed) .gamburger_line:first-of-type {
+                transform: rotate(35deg);
+                position: absolute;
+                bottom: 10px;
+                right: 7px;
+                width: 35px;
+            }
+            
+            .navbar .navbar-toggler:not(.collapsed) .gamburger_line:last-of-type {
+                transform: rotate(-35deg);
+                position: absolute;
+                top: 15px;
+                right: 7px;
+                width: 35px;
+            }
+            
+            .navbar .navbar-toggler:not(.collapsed) .gamburger_line:nth-of-type(2) {
+                display: none;
+            }
+            
+            .navbar-collapse .page_links li a {
+                color: #132237;
+            }
+            
+            .navbar-collapse .page_links li {
+                display: block;
+                width: 100%;
+            }
+            
+            .navbar-collapse .page_links {
+                flex-wrap: wrap;
+            }
+            
+            @media(max-width:1200px) {
+                .main_info h1 {
+                    font-size: 47px;
+                }
+                .top_itunes .left_part {
+                    padding-right: 55px;
+                }
+                .top_itunes .right_part {
+                    padding-right: 55px;
+                }
+                .top_itunes p {
+                    margin-bottom: 43px;
+                }
+                .right_part img {
+                    left: -30px;
+                }
+                footer .phone {
+                    font-size: 25px;
+                }
+                .page_links li {
+                    margin-right: 35px;
+                }
+            }
+            
+            @media(max-width:991px) {
+                .header_phone {
+                    font-size: 25px;
+                    margin-bottom: 5px;
+                    display: block;
+                }
+                .advantages .description {
+                    margin-bottom: 30px;
+                }
+                .top_itunes .left_part {
+                    padding-right: 0;
+                }
+                .top_itunes .right_part {
+                    padding-right: 0;
+                }
+                .top_itunes .left_part img {
+                    width: 100%;
+                }
+                .right_part img {
+                    left: 0;
+                }
+                .top_itunes {
+                    max-height: 860px;
+                }
+                .page_links li {
+                    margin-right: 23px;
+                }
+            }
+            
+            @media(max-width:767px) {
+                .main_header {
+                    display: none;
+                }
+                .subheader .page_links li {
+                    margin-right: 20px;
+                }
+                .first_section {
+                    padding-top: 60px;
+                    padding-bottom: 60px;
+                }
+                .main_info h1 {
+                    margin-bottom: 35px;
+                }
+                .main_info p {
+                    margin-bottom: 55px;
+                }
+                .top_itunes .left_part img {
+                    display: none;
+                }
+                .top_itunes .right_part img {
+                    display: none;
+                }
+                .mops {
+                    padding-bottom: 50px;
+                }
+                .top_itunes {
+                    padding-top: 50px;
+                    max-height: none;
+                }
+                footer .page_links {
+                    margin-bottom: 20px;
+                }
+                footer .phone {
+                    text-align: left;
+                    margin-top: 20px;
+                }
+                footer .mail {
+                    text-align: left;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+                .social_links {
+                    justify-content: flex-start;
+                }
+            }
+            
+            @media(max-width:575px) {
+                .main_info h1 {
+                    font-size: 36px;
+                }
+                .main_info h1 span {
+                    font-size: 55px;
+                    margin-top: 5px;
+                }
+                .main_info p {
+                    font-size: 18px;
+                    max-width: 440px;
+                }
+                .button_overlay button {
+                    padding-top: 15px;
+                    padding-left: 35px;
+                    padding-bottom: 16px;
+                    padding-right: 35px;
+                }
+                .advantages h2 {
+                    font-size: 38px;
+                    margin-bottom: 40px;
+                }
+                .advantages .description {
+                    margin-top: 15px;
+                }
+                .advantages {
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                }
+                .mops {
+                    padding-bottom: 50px;
+                    padding-top: 50px;
+                }
+                .top_itunes h2 {
+                    font-size: 38px;
+                }
+                .feadback h4 {
+                    width: auto;
+                    font-size: 26px;
+                }
+                .feadback img {
+                    height: 100%;
+                }
+                .feadback {
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                }
+                footer .page_links {
+                    flex-wrap: wrap;
+                }
+            }
+            
+            @media(max-width:400px) {
+                .navbar-brand img {
+                    width: 200px;
+                }
+                .main_info h1 {
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+                .main_info h1 span {
+                    font-size: 50px;
+                }
+                .main_info p {
+                    font-size: 14px;
+                    margin-bottom: 25px;
+                }
+                .first_section {
+                    padding-top: 35px;
+                    padding-bottom: 35px;
+                }
+                .advantages h2 {
+                    font-size: 30px;
+                }
+                .text_gradient {
+                    font-size: 60px;
+                }
+                #myTab .nav-item {
+                    min-width: 80px;
+                }
+                #myTab .nav-item a {
+                    padding: 5px 0;
+                }
+                .tracks_table_row {
+                    padding: 8px 16px;
+                }
+                .tracks_table_descr {
+                    padding-left: 16px;
+                    margin-bottom: 0;
+                }
+                .top_itunes p {
+                    line-height: 22px;
+                }
+                .feadback h4 {
+                    font-size: 22px;
+                }
+                .feadback button {
+                    font-size: 13px;
+                    padding-top: 18px;
+                    padding-right: 30px;
+                    padding-bottom: 18px;
+                    padding-left: 30px;
+                }
+            }
