@@ -275,7 +275,7 @@ header {
 
 .img_right.reverse {
     flex-direction: row-reverse;
-    height: calc(100vh);
+    height: calc(100vh - 98px);
 }
 
 .img_right.reverse .offers_text {
@@ -616,9 +616,13 @@ footer .footer_container {
     .img_right .offers_item {
         max-width: 100%;
         transform: none;
+        margin-top: 20px;
     }
     footer {
         display: none;
+    }
+    .img_right.reverse {
+        height: 100vh;
     }
 }
 
