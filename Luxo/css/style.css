@@ -275,7 +275,7 @@ header {
 
 .img_right.reverse {
     flex-direction: row-reverse;
-    height: calc(100vh - 96px);
+    height: calc(100vh);
 }
 
 .img_right.reverse .offers_text {
@@ -362,13 +362,20 @@ footer .footer_container {
 .modal__container {
     background-color: #fff;
     padding: 0px;
-    max-width: 630px;
+    max-width: 560px;
     max-height: 100vh;
     border-radius: 4px;
     overflow-y: auto;
     box-sizing: border-box;
     height: 315px;
     overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.modal__container iframe {
+    width: 100%;
 }
 
 .modal__header {
@@ -575,6 +582,19 @@ footer .footer_container {
     .offers.offers_mobile .fp-controlArrow {
         top: 53vw;
     }
+    .offers.offers_mobile .fp-controlArrow::before {
+        content: '';
+        width: 100px;
+        height: 150px;
+        position: absolute;
+        top: -75px;
+    }
+    .offers.offers_mobile .fp-controlArrow.fp-prev::before {
+        left: -15px;
+    }
+    .offers.offers_mobile .fp-controlArrow.fp-next::before {
+        right: -15px;
+    }
     .promo_overlay h2 {
         font-size: 7vw;
     }
@@ -584,7 +604,11 @@ footer .footer_container {
     .img_right {
         flex-direction: column-reverse !important;
     }
-    .img_right .offers_text,
+    .img_right .offers_text {
+        width: 100%;
+        height: 50%;
+        align-items: flex-start;
+    }
     .img_right .offers_img {
         width: 100%;
         height: 50%;
@@ -592,6 +616,9 @@ footer .footer_container {
     .img_right .offers_item {
         max-width: 100%;
         transform: none;
+    }
+    footer {
+        display: none;
     }
 }
 
@@ -653,5 +680,9 @@ footer .footer_container {
     }
     .img_right .offers_img img {
         height: 90%;
+    }
+    .offers_item p {
+        font-size: 15px;
+        margin-bottom: 5px;
     }
 }
