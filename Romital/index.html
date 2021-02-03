@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная страница</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="preload" href="./css/libs.min.css" as="style">
+<link rel="preload" href="./css/app.css" as="style">
+
+<link rel="stylesheet" href="./css/libs.min.css">
+<link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+    <header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-5 col-sm-7 col-9">
+                <a class="logo_link" href="/">
+                    <img src="img/logo.png" alt="">
+                    <p><span>Центр </span> пластической хирургии</p>
+                </a>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block">
+                <div>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> г. Киев, Пушкинская, 38
+                    </p>
+                    <p>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="medium-m" class="svg-inline--fa fa-medium-m fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M71.5 142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3 72.1V64h140.2l108.4 237.7L364.2 64h133.7v8.1l-38.6 37c-3.3 2.5-5 6.7-4.3 10.8v272c-.7 4.1 1 8.3 4.3 10.8l37.7 37v8.1H307.3v-8.1l39.1-37.9c3.8-3.8 3.8-5 3.8-10.8V171.2L241.5 447.1h-14.7L100.4 171.2v184.9c-1.1 7.8 1.5 15.6 7 21.2l50.8 61.6v8.1h-144v-8L65 377.3c5.4-5.6 7.9-13.5 6.5-21.2V142.3z"></path></svg>                        Театральная/Дворец спорта
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 d-none d-md-block">
+                <ul class="social_links">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-5 col-3">
+                <div class="header_menu_container">
+                    <div class="phone_container">
+                        <a href="tel:8 800 000 00 00">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </a>
+                        <div class="contacts_container">
+                            <a href="tel:8 800 000 00 00">8 800 000 00 00</a>
+                            <p>Пн–Вс: 9:00–21:00</p>
+                        </div>
+                    </div>
+                    <button type="button" class="menu_button" id="open_menu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    Меню
+                </button></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-9 col-lg-9 col-md-12 d-none d-md-block">
+                <ul class="header_menu header_bottom">
+                    <li><a href="#">О клинике</a></li>
+                    <li><a href="#">Виды операций <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Пластика груди <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Пластика груди </a>
+                                    </li>
+                                    <li><a href="#">Подтяжка груди</a></li>
+                                    <li><a href="#">Увеличение груди</a></li>
+                                    <li><a href="#">Уменьшение груди</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Пластика лица <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Пластика груди </a>
+                                    </li>
+                                    <li><a href="#">Подтяжка груди</a></li>
+                                    <li><a href="#">Увеличение груди</a></li>
+                                    <li><a href="#">Уменьшение груди</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Пластика тела <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Пластика груди </a>
+                                    </li>
+                                    <li><a href="#">Подтяжка груди</a></li>
+                                    <li><a href="#">Увеличение груди</a></li>
+                                    <li><a href="#">Уменьшение груди</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Интимная пластика</a></li>
+                            <li><a href="#">Липосакция</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Цена</a></li>
+                    <li><a href="#">фото до и после</a></li>
+                    <li><a href="#">специалисты</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">контакты</a></li>
+                </ul>
+
+            </div>
+            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                <div class="header_bottom header_bottom_phone">
+                    <a data-toggle="modal" data-target="#call_modal" href="#">
+                        <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                        <p>Обратный звонок</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <aside class="menu">
+    <div class="scroll_container">
+        <div class="menu_list_container">
+            <h2>Меню</h2>
+            <ul class="menu_simple_list">
+                <li><a href="#"> О клинике</a></li>
+                <li><a href="#"> Цены</a></li>
+                <li><a href="#"> Виды операций</a></li>
+                <li><a href="#"> Фото до и после</a></li>
+                <li><a href="#"> Вопросы и ответы</a></li>
+                <li><a href="#"> Отзывы</a></li>
+                <li><a href="#"> Специалисты</a></li>
+                <li><a href="#"> Сертификаты</a></li>
+                <li><a href="#"> Акции</a></li>
+                <li><a href="#"> Новости</a></li>
+                <li><a href="#"> Контакты</a></li>
+            </ul>
+            <div class="search_container">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" placeholder="Я ищу">
+            </div>
+        </div>
+        <div class="menu_list_container">
+            <h2>Услуги</h2>
+            <h3>Пластика груди</h3>
+            <ul class="menu_doted_list">
+                <li><a href="#">Подтяжка груди</a> </li>
+                <li><a href="#">Увеличение груди</a> </li>
+                <li><a href="#">Уменьшение груди</a> </li>
+
+            </ul>
+            <h3>Пластика лица</h3>
+            <ul class="menu_doted_list no_margin">
+                <li><a href="#">Подтяжка лица (фейслифтинг)</a> </li>
+                <li><a href="#">Подтяжка бровей</a></li>
+                <div class="collapse" id="collapseFace">
+                    <li><a href="#">Подтяжка лица (фейслифтинг)</a></li>
+                    <li><a href="#">Подтяжка бровей</a></li>
+                    <li><a href="#">Подтяжка лица (фейслифтинг)</a></li>
+                    <li><a href="#">Подтяжка бровей</a></li>
+                </div>
+            </ul>
+            <a class="show_more collapsed" data-toggle="collapse" href="#collapseFace" role="button" aria-expanded="false" aria-controls="collapseFace">Все услуги <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <h3>Пластика тела</h3>
+            <ul class="menu_doted_list no_margin">
+                <li><a href="#">Пластика живота</a></li>
+                <li><a href="#">Пластика беред</a></li>
+                <div class="collapse" id="collapseBody">
+                    <li><a href="#">Подтяжка лица (фейслифтинг)</a></li>
+                    <li><a href="#">Подтяжка бровей</a></li>
+                    <li><a href="#">Подтяжка лица (фейслифтинг)</a></li>
+                    <li><a href="#">Подтяжка бровей</a></li>
+                </div>
+            </ul>
+            <a class="show_more collapsed" data-toggle="collapse" href="#collapseBody" role="button" aria-expanded="false" aria-controls="collapseBody">Все услуги <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <a class="additional_link" href="#">Интимная плстика</a>
+            <a class="additional_link" href="#">Липосакция</a>
+        </div>
+        <div class="menu_list_container">
+            <h2>Контакты</h2>
+
+
+
+
+            <div class="contacts_item">
+                <div class="contacts_item_icon">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i></div>
+                <div class="contacts_item_text">
+                    <h4>Телефон</h4>
+                    <a href="tel:+38 000 000 00 00">+38 000 000 00 00</a>
+                </div>
+            </div>
+            <div class="contacts_item">
+                <div class="contacts_item_icon">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <div class="contacts_item_text">
+                    <h4>Адрес</h4>
+                    <p>г. Киев, Пушкинская 38</p>
+                    <p>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="medium" class="svg-inline--fa fa-medium fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 32v448h448V32H0zm372.2 106.1l-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z"></path></svg>                        Рядом 2 станции метро Театральная / дорец спорта</p>
+                </div>
+            </div>
+            <div class="contacts_item">
+                <div class="contacts_item_icon">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                <div class="contacts_item_text">
+                    <h4>График работы</h4>
+                    <p>Пн-Вс: 9:00-21:00</p>
+                </div>
+            </div>
+            <div class="contacts_item">
+                <div class="contacts_item_icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="contacts_item_text">
+                    <h4>
+                        <a href="mailto:info@romital.com.ua">info@romital.com.ua</a>
+                    </h4>
+                </div>
+            </div>
+            <button data-toggle="modal" data-target="#message_modal"><p>Оставить заявку </p><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+            <ul class="social_links">
+                <li>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu_settings">
+        <img src="img/menu_bgr.jpg" alt="">
+        <div class="menu_settings_overlay">
+            <p><span>Центр </span> пластической хирургии</p>
+            <a href="#" id="close_menu">
+                <span>Закрыть меню</span>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</aside>
+    <section class="main_section">
+    <img class="img_desktop" src="img/section_1.jpg" alt="">
+    <img class="img_mobile" src="img/uslugi.png" alt="">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 col-10">
+                <h2>СОВРЕМЕННЫЙ ЦЕНТР</h2>
+                <h1><span>ПЛАСТИЧЕСКОЙ</span><span> ХИРУРГИИ В КИЕВЕ</span></h1>
+                <p><b>Запишитесь на консультацию к хирургу</b> до 00. 00.0000 и получите скидку на любую из услуг!</p>
+                <button type="button" data-toggle="modal" data-target="#call_modal"><p>Записаться </p><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+            </div>
+            <div class="col-xl-7 col-lg-6 col-md-4 col-sm-2">
+                <div class="scroll_down_container">
+                    <div class="scroll_down">
+                        <p>Листайте вниз</p>
+                        <div><img src="img/mouse.png" alt=""></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="advantages_container">
+                    <div class="advantages_item">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <p>Гарантируем результат <b>– 17 лет опыта</b></p>
+                    </div>
+                    <div class="advantages_item advantages_item--blue">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <p>Быстрая реабилитация и конфиденциальность</p>
+                    </div>
+                    <div class="advantages_item">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <p>Юридические гарантии и демократичные цены</p>
+                    </div>
+                    <div class="advantages_item advantages_item--blue">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <p>Внимательные и опытные хирурги</p>
+                    </div>
+                    <div class="advantages_item">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <p>Современное оборудование
+                        </p>
+                    </div>
+                    <div class="advantages_item advantages_item--blue d-xl-none">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <p>Демократичные цены</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="wishes">
+    <img class="img_desktop" src="img/Rectangle237.png" alt="">
+    <img class="img_mobile" src="img/wishes_mobile.jpg" alt="">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-6">
+                <h2>Всегда учитываем Ваши <span>пожелания</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-5 col-lg-6 col-md-6">
+                <div class="wishes_item">
+                    <div class="wishes_item_icon"><img src="img/doctor2.png" alt=""></div>
+                    <h3>Доктор приходит вовремя</h3>
+                    <p class="small_padding">Не ждите доктора целый час, как в других клиниках. Мы особо внимательно относимся к своим клиентам и заботимся, чтобы ваше время пребывания у нас было максимально комфортным, без задержек.</p>
+                    <span class="wishes_item_count">01</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="wishes_item wishes_item_mobile">
+                    <div class="wishes_item_icon"><img src="img/service1.png" alt=""></div>
+                    <h3>Лучший сервис</h3>
+                    <p class="big_padding">Мощный wi-fi, кулеры для воды, современный ресепшн, кожаные диваны, кондиционеры.</p>
+                    <span class="wishes_item_count">02</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-5 col-lg-6 col-md-12">
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <div class="wishes_item">
+                            <div class="wishes_item_icon"><img src="img/doct1.png" alt=""></div>
+                            <h3>Прекрасная атмосфера
+                            </h3>
+                            <p>Вас всегда встретят администраторы и выслушает персонал.</p>
+                            <span class="wishes_item_count">03</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="wishes_item">
+                            <div class="wishes_item_icon wishes_item_small"><img src="img/dollar.png" alt=""></div>
+                            <h3>Гибкая система оплаты
+                            </h3>
+                            <p>Любые виды расчетов. Оплачивайте так, как удобно Вам!</p>
+                            <span class="wishes_item_count">04</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-12">
+                <div class="wishes_item_img_container">
+                    <img src="img/women.jpg" alt="">
+
+                    <div class="wishes_item wishes_item_overlay ">
+                        <div class="wishes_item_icon"><img class="icon_desktop" src="img/Discount.png" alt=""> <img class="icon_mobile" src="img/icon_mobile.png" alt=""></div>
+                        <h3>Действующие скидки</h3>
+                        <p>Телефон для справок и записи на консультацию:</p>
+                        <a href="tel:+38 000 000 00 00">+38 000 000 00 00</a>
+                        <span class="wishes_item_count">05</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="doctors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-12" style="z-index: 5;">
+                <h2><span class="bg_white">Профессиональные</span>
+                    <span class="bg_blue">фото с клиники</span></h2>
+                <h3 class="section_description">Осмотр врача</h3>
+                <p class="section_description">Описание слайда фотографии текстом</p>
+                <div class="slider_controls">
+                    <p><span class="current_slide_nomber">1</span>/ 7</p>
+                    <div class="button_container">
+                        <button class="blue_button"><p>Вперед</p><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+                        <button class="white_button"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-12" style="z-index: 4;">
+                <div class="doctor_slider">
+                    <div class="slide"><img src="img/section3_doctors.jpg" alt=""></div>
+                    <div class="slide"><img src="img/section3_people.jpg" alt=""></div>
+                    <div class="slide"><img src="img/slide_3.jpg" alt=""></div>
+                    <div class="slide"><img src="img/slide_4.jpg" alt=""></div>
+                    <div class="slide"><img src="img/slide_5.jpg" alt=""></div>
+                    <div class="slide"><img src="img/slide_6.jpeg" alt=""></div>
+                    <div class="slide"><img src="img/slide_7.jpg" alt=""></div>
+                </div>
+                <div class="doctor_slider_arrows">
+                    <div class="doctor_slider_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                    <div class="doctor_slider_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                </div>
+                <div class="doctor_slider_numbers">
+                    <p><span class="current_slide_nomber">1</span> / <span>7</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div>
+                    <h2>Виды операций «Ромиталь»</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="services_item">
+                    <img class="img_desktop" src="img/services_1.png" alt="">
+                    <img class="img_mobile" src="img/westg.png" alt="">
+                    <h3>Пластика лица</h3>
+                    <ul class="services_item_types">
+                        <li>Подтяжка лица (фейслифтинг)</li>
+                        <li>Подтяжка кожи лба</li>
+                        <li>Подтяжка бровей</li>
+                        <li>Блефаропластика</li>
+                        <li>Отопластика</li>
+                        <li>Пластика губ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="services_item stupid_lady">
+                    <img src="img/service_2.png" alt="">
+                    <h3>Пластика тела</h3>
+                    <ul class="services_item_types">
+                        <li>Абдоминопластика, пластика живота</li>
+                        <li>Бодилифтинг</li>
+                        <li>Пластика бедер</li>
+                        <li>Пластика плечевых областей (брахиопластика)</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-12">
+                <div class="services_item">
+                    <img src="img/service_3.png" alt="">
+                    <h3>Пластика груди</h3>
+                    <ul class="services_item_types">
+                        <li>Подтяжка груди (мастопексия)</li>
+                        <li>Уменьшение <br> груди</li>
+                        <li>Увеличение <br> груди</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="services_item">
+                    <img src="img/service_4.png" alt="">
+                    <h3>Интимная <br> пластика</h3>
+                    <p>Операции с женской интимной зоной</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="services_item">
+                    <img src="img/service_5.png" alt="">
+                    <h3>Липосакция</h3>
+                    <p>Операция по удалению жировых отложений</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="team">
+    <div class="bg_overlay">
+        <img src="img/section4_bg.jpg" alt="">
+        <div></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <img class="bg_container" src="img/section4_bg1.png" alt="">
+            <div class="col-md-3 col-12">
+                <p class="section_title">КОМАНДА</p>
+                <h2>Врачи, творящие чудеса</h2>
+                <p>В составе врачей «Ромиталь» только лучшие специалисты из всех направлений хирургии. </p>
+                <div class="slider_progress_container hidden_mobile">
+                    <span class="current_slide">01</span>
+                    <div class="all_progress">
+                        <div class="current_progress"></div>
+                    </div>
+                    <span class="all_slides_count">08</span>
+                </div>
+                <div class="button_container hidden_mobile">
+                    <button class="button_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                    <button class="button_next">Вперед <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="col-md-9 col-12">
+                <div class="team_slider">
+                    <div class="slide">
+                        <img src="img/team1.jpg" alt="">
+                        <div class="slide_info">
+                            <h3>Голод Александр</h3>
+                            <p><b>Главный врач клиники.</b> Дерматолог, специалист по контурной пластике</p>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/team2.jpg" alt="">
+                        <div class="slide_info">
+                            <h3>Нашеда Сергей</h3>
+                            <p>Уролог, хирург, врач высшей категории</p>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/team3.jpg" alt="">
+                        <div class="slide_info">
+                            <h3>Петах Андрей</h3>
+                            <p>Пластический хирург, флеболог</p>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/team1.jpg" alt="">
+                        <div class="slide_info">
+                            <h3>Голод Александр</h3>
+                            <p><b>Главный врач клиники.</b> Дерматолог, специалист по контурной пластике</p>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/team2.jpg" alt="">
+                        <div class="slide_info">
+                            <h3>Нашеда Сергей</h3>
+                            <p>Уролог, хирург, врач высшей категории</p>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/team3.jpg" alt="">
+                        <div class="slide_info">
+                            <h3>Петах Андрей</h3>
+                            <p>Пластический хирург, флеболог</p>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/team1.jpg" alt="">
+                        <div class="slide_info">
+                            <h3>Голод Александр</h3>
+                            <p><b>Главный врач клиники.</b> Дерматолог, специалист по контурной пластике</p>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/team2.jpg" alt="">
+                        <div class="slide_info">
+                            <h3>Нашеда Сергей</h3>
+                            <p>Уролог, хирург, врач высшей категории</p>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_controls">
+                    <div class="slider_progress_container">
+                        <span class="current_slide">01</span>
+                        <div class="all_progress">
+                            <div class="current_progress"></div>
+                        </div>
+                        <span class="all_slides_count">08</span>
+                    </div>
+                    <div class="button_container">
+                        <button class="button_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                        <button class="button_next">Вперед <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="questions">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="questions_container">
+                    <img class="img_desktop" src="img/section5.jpg" alt="">
+                    <img class="img_mobile" src="img/bg_mobile_questions.jpg" alt="">
+                    <h2>У ВАС ЕСТЬ ВОПРОСЫ?</h2>
+                    <p>Напишите нам!</p>
+                    <button data-toggle="modal" data-target="#message_modal" class="blue_button"><p>Написать</p><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="contacts_container">
+                    <h2>Контакты</h2>
+                    <p>Нас легко найти и удобно добраться</p>
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-4 col-md-6 d-none d-md-block">
+                <p class="subheader">Находимся в центре города!</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="contacts_element contacts_element_first">
+
+                    <div class="contacts_element_text">
+                        <h3><i class="fa fa-phone-square" aria-hidden="true"></i>Звоните</h3>
+                        <a href="tel:8 800 500 00 00">8 800 500 00 00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="contacts_element contacts_element_right">
+
+                    <div class="contacts_element_text">
+                        <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Адрес</h3>
+                        <p>г. Киев, Пушкинская, 38</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="contacts_info_container">
+                    <div class="contacts_element">
+
+                        <div class="contacts_element_text">
+                            <h3><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="medium" class="svg-inline--fa fa-medium fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 32v448h448V32H0zm372.2 106.1l-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z"></path></svg>Рядом
+                                2 станции метро:</h3>
+                            <p>Театральная/Дворец спорта</p>
+                        </div>
+                    </div>
+                    <div class="contacts_element">
+
+                        <h3><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@romital.com.ua" style="color: #0046E8;">info@romital.com.ua</a></h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-5 d-none d-md-block">
+                <div class="map_info">
+                    <img src="img/section_5.jpg" alt="">
+                    <h3>График работы</h3>
+                    <p>Пн–Вс: 9:00–21:00</p>
+                    <button data-toggle="modal" data-target="#call_modal">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-7">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21781.959271435375!2d31.984607577323924!3d46.96670177647394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5c962ad734ffd%3A0x531d9791e3a6a8e8!2z0KHRltGC0ZbRhtC10L3RgtGA!5e0!3m2!1suk!2sua!4v1611790998094!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="footer_flex_container"> <img src="img/logo_footer.png" alt="">
+                    <p>Центр пластической хирургии</p>
+                    <p>У вас есть вопросы?Напишите нам!</p>
+                    <button data-toggle="modal" data-target="#call_modal">Заказать звонок</button>
+                    <ul class="footer_social_links">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 offset-xl-1 col-xl-2 col-md-4 col-sm-6 col-12">
+                <div class="footer_flex_container">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li>
+                            <a href="#">О клинике </a>
+                        </li>
+                        <li>
+                            <a href="#">Цены</a>
+                        </li>
+                        <li>
+                            <a href="#">Фото До и После</a>
+                        </li>
+                        <li>
+                            <a href="#">Вопросы и ответы</a>
+                        </li>
+                        <li>
+                            <a href="#">Видеоотзывы</a>
+                        </li>
+                        <li>
+                            <a href="#">Специалисты</a>
+                        </li>
+                        <li>
+                            <a href="#">Сертификаты</a>
+                        </li>
+                        <li>
+                            <a href="#">Акции</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">Карта сайта</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 offset-xl-1 col-xl-2 col-md-4 col-sm-6 col-12">
+                <div class="footer_flex_container">
+                    <h3>Виды операций</h3>
+                    <h4>Пластика груди: </h4>
+                    <ul>
+                        <li><a href="#">Подтяжка груди (мастопексия)</a></li>
+                        <li><a href="#">Уменьшение груди</a></li>
+                        <li><a href="#">Увеличение груди</a></li>
+                    </ul>
+                    <h4>Пластика лица:</h4>
+                    <ul>
+                        <li><a href="#">Подтяжка лица (фейслифтинг)</a></li>
+                        <li><a href="#">Подтяжка кожи лба</a></li>
+                        <li><a href="#">Подтяжка бровей</a></li>
+                        <li><a href="#">Блефаропластика</a></li>
+                        <li>
+                            <a href="#">Отопластика</a>
+                        </li>
+                        <li>
+                            <a href="#">Пластика губ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-6 col-12">
+                <div class="footer_mobile_container footer_flex_container">
+                    <div>
+                        <h4>Пластика тела: </h4>
+                        <ul>
+                            <li><a href="#">Пластика живота</a></li>
+                            <li><a href="#">Бодилифтинг</a></li>
+                            <li><a href="#">Пластика бедер</a></li>
+                            <li><a href="#">Брахиопластика</a></li>
+                            <li><a href="#">Липосакция</a></li>
+                            <li><a href="#">Интимная пластика</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Контакты</h3>
+                        <p class="address"><i class="fa fa-map-marker" aria-hidden="true"></i> г. Киев, Пушкинская 38</p>
+                        <p class="address"><i class="fa fa-map-pin" aria-hidden="true"></i> Театральная/Дворец спорта</p>
+                        <a class="address" href="tel:8 800 000 00 00"><i class="fa fa-phone" aria-hidden="true"></i> 8 800 000 00 00</a></div>
+                </div>
+            </div>
+            <div class="col-12">
+                <form class="footer_search" action="">
+                    <input placeholder="Поиск по сайту, введите запрос..." type="text">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </form>
+            </div>
+            <div class="col-sm-6 col-12">
+                <p class="subscribe_text">Подпишитесь на нашу рассылку, чтоб быть вкурсе всех новостей:</p>
+            </div>
+            <div class="col-sm-6 col-12">
+                <form class="subscribe_form" action="">
+                    <input placeholder="Введите email" type="text">
+                    <button><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#">
+                    <p>Пользовательское согласшение</p>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#">
+                    <p>Политика конфиденциальности</p>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <p>18+ | 2000-2020 © Все права защищены</p>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <p>Разработка</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="call_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <img src="img/close.png" alt="">
+                </button>
+                <img src="img/call_modal.jpg" alt="">
+                <div class="modal_inner">
+                    <h2>Оставьте заявку!</h2>
+                    <p>Заявка через сайт является предварительной. Мы перезвоним Вам в самое ближайшее время.</p>
+                    <form action="">
+                        <div class="input_container">
+                            <input type="text" placeholder="Имя">
+                            <span></span>
+                        </div>
+                        <div class="input_container">
+                            <input type="text" placeholder="Телефон">
+                            <span></span>
+                        </div>
+                        <button class="submit_btn" type="submit">
+                        Отправить
+                    </button>
+                        <div>
+                            <input type="checkbox" id="license" class="custom-checkbox">
+
+                            <label for="license">Я принимаю условия <a href="#">Пользовательского соглашения</a> и даю свое согласие на обработку моей персональной информации на условиях, определенных <a href="#">Политикой конфиденциальности.</a> </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="message_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <img src="img/close.png" alt="">
+                </button>
+                <img src="img/call_modal.jpg" alt="">
+                <div class="modal_inner">
+                    <h2>Оставьте заявку!</h2>
+                    <p>Мы пришлем ответ Вам на электронную почту</p>
+                    <form action="">
+                        <div class="input_container">
+                            <input type="text" placeholder="Имя">
+                            <span></span>
+                        </div>
+                        <div class="input_container">
+                            <input type="text" placeholder="Телефон">
+                            <span></span>
+                        </div>
+                        <div class="input_container">
+                            <textarea placeholder="Ваш вопрос" cols="30" rows="3"></textarea>
+                            <span></span>
+                        </div>
+                        <button class="submit_btn" type="submit">
+                        Отправить
+                    </button>
+                        <div>
+                            <input type="checkbox" id="license-2" class="custom-checkbox">
+
+                            <label for="license-2">Я принимаю условия <a href="#">Пользовательского соглашения</a> и даю свое согласие на обработку моей персональной информации на условиях, определенных <a href="#">Политикой конфиденциальности.</a> </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script defer="" src="./js/libs.min.js"></script>
+    <script defer="" src="./js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>
