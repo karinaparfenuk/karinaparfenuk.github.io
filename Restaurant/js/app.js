@@ -46,6 +46,8 @@ function initPhoneMask() {
 
 function goToSection(selector) {
   console.log(selector);
+  $(".toggle_mobile_menu").removeClass("active");
+  $(".mobile_menu").removeClass("active");
   $('html, body').animate({
     scrollTop: $(selector).offset().top
   }, 1000);
